@@ -24,4 +24,4 @@ large <- z[z >= 5]
 z[z > 5] <- 5
 
 # Replace every other value in `z` with the number 0
-z[z < 5] <- 0
+z[c(TRUE, FALSE)] <- 0
